@@ -1,0 +1,427 @@
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+raghadsamyaskar@pop-os:~$ cd Downloads
+raghadsamyaskar@pop-os:~/Downloads$ unzip Updated-Task-02.zip
+Archive:  Updated-Task-02.zip
+   creating: Updated-Task-02/
+  inflating: Updated-Task-02/README.txt  
+  inflating: Updated-Task-02/.level-1.tar  
+raghadsamyaskar@pop-os:~/Downloads$ tar xvf Updated-Task-02/.level-1.tar
+.level-1/
+.level-1/README.txt
+.level-1/level-2
+raghadsamyaskar@pop-os:~/Downloads$ cd .level-1
+raghadsamyaskar@pop-os:~/Downloads/.level-1$ cat README.txt
+Decompress "level-2".
+Hint: Most compression tools require it's suffix.
+raghadsamyaskar@pop-os:~/Downloads/.level-1$ file level-2
+level-2: gzip compressed data, was "level-2.tar", last modified: Wed Aug  9 17:59:07 2023, from Unix, original size modulo 2^32 112640
+raghadsamyaskar@pop-os:~/Downloads/.level-1$ tar -xf level-2
+raghadsamyaskar@pop-os:~/Downloads/.level-1$ gunzip level-2.gz
+gzip: level-2.gz: No such file or directory
+raghadsamyaskar@pop-os:~/Downloads/.level-1$ cd level-2
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2$ ls
+01VzXCtEZS  7B5l8AC1M8  clktsGviqW  eRz0wDJzB6  HC3gnSrNHL  l6FQ8rGXcW  oATDmz0CAK  rTAkta2aW2  v9kNm4bENt  YH3RBGocdA
+09tuxAUkSZ  7dnQ0OZO7U  CoXO2qfhv8  Etsj7NECd9  HDe7NHRINO  l8fShvYkRA  OBfROJ7kKU  rzz4HDYtQb  VkL2bz9W98  ymuoaRLefH
+0MaqBh51eE  7f6nrbSyXM  cqxENw21F1  eTY7qTsykD  HRHgAeIQKP  lcVizkoO1R  OEQ9RG7Cam  s82TBxnZgd  vm5P2xLF3s  yWegzIJdDb
+1Rc48mLISP  8HuZDGUf7D  cTJdoZGT00  evJEy0ce9D  hsM9mQuMTH  lvEy6vrtZe  OlDXrxU8tn  SkWLO4DmJj  VMVoKBX4Qu  yWY8iLmL2v
+1t7LeNZeIl  8lNsncDmgT  cUJtGyfwcE  f4sJ94QCRL  hynub0MKNl  LXdwN4DGye  OQUNDxbuAf  soPx5vMfvS  vOcM3EYMXw  Yx2PUbl2gA
+2dBiyDY1PQ  a8wKwwWNRJ  cuL74htcTP  F7HxYNlWa1  Ib1jBtgkP4  lxQpP8fJrM  P9w2t9K9Ju  SpGacqvoQe  VUOJouKqL9  ZDe6elrEn5
+2tqNyIRWZk  ABtpOP8TR9  cYLRnO8xIB  feBbPjPHsA  iJfohlDIrt  mIQgRJXCLp  PBQjGeeXZ2  Sv7z35zbDG  VxWCuMyoCO  ZgiaL4uwSD
+3aI6ZRWi7g  AbyVd8kDq7  D240Im7S6f  FKtcWd8ViA  IXzIL2c9IA  mLD2604WjZ  PDsc45eDhU  T4TiKdPbRw  w9ophYtx44  ZhfPkBCn6B
+3HClX3dFMm  aD09T4P1xb  dcWFp0gN0U  fky7p46DOi  jbZwCGWF1u  mMwQyrbtaZ  po63smRLBt  tmDRcrdYa9  waa5BUbYjL  zQ85ieoBzD
+3nhuQzOgpI  afHUHOaYAb  dkbSpLYJE5  fSikeo7Jtz  jGu9MApzJB  Mn1k5s3x2R  pptcUXKeGS  TynxkdcmfZ  wfbzcLn49x  zTpHflQtBt
+40Mg6vDbYN  AKf6S1hWVZ  DQ3kjLgCUV  fTBdzWqgkc  JiMEslX4PO  mTJFxGhibA  pRQVevx1kv  u8APo7fuFv  WU2NIZw5bL  ZwCSnEFDCS
+4bq72IzcAj  AofrZBGKhB  dW436qn2Pa  FUSxQX2TeD  JVucZ5s2sO  n80qgsvhlQ  PVhcqo825N  uCBBCPnmb2  WWgF2QTu1U  zXOU7yVyjx
+4CkUBprXze  aT6OddrPAr  DWahK49MnT  g18DV62wEd  jzjKDCAuJh  n8QxXKvUat  Q6QURkVvYf  uH7zN1UJSF  WxGYCzojb5
+4OAvfgFenY  AVR4cOJJui  dwmlaLoghH  gB9k1O4ZT6  k0KGHDEFmp  n9Gy45gDYd  QIGyaTtmlW  UkoXWlT8ck  WzkBDyZf09
+4Qm9FLdd1E  AXkzOy8ZzP  DYCdqY7wJN  gBT5u0vLT5  KNXMn8sBL8  NABe6RrZS9  QirM8dLKSD  UkXg7Lp9iV  x2OxGPBNwZ
+4TqWZorrCe  b8L3KxPJL3  E0bi5j8X9V  Gf0hDzawoe  KO4TANambB  NB8PtjcBPu  Qv3QTzvZC1  Uo2uLQHfWm  X7by8vw474
+54is18fJ6D  bc83b2Byu2  EC1LKYOR0Z  Gi0sWVVQmE  kPIkdmGR9B  NuvecJk6rH  README.txt  URJcbPH7ig  xiRKbhzAt6
+5CnJF4NcXe  BeSbKu0Ogb  ECIShbzsBE  GqeOr84K6i  kr6RDEYCed  nV9Fht2ABW  rHC2JXoQSc  uUeLfbjNyx  Xnmws6DuHJ
+6jKgIUUWGx  BsdD4ojJkc  EDPOSQuyWk  gUm1Kw3MsJ  kuDj7Ti4Id  O0Jt20BDT8  rjS1PORSqI  UUrQyToe6M  Y2WinDQzOb
+6LythIyWzQ  bvSabnQtuB  EJd4UALueA  GuxvN3cJ7U  kVQzoTdmBO  o1hEPIsnq0  rn4s52kOCO  uYt23HMkvu  y7U81AE7BP
+6QcByCct9B  ciyaIBrj64  emEeo94yqd  H2TS1vp6Xt  L3QwW94Azo  o5zluFzkcg  rnTFX18Jh9  v2LInrvkDO  yc0GFVKDtL
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2$ find -type f -name "*txt"
+./README.txt
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2$ cat ./README.txt
+Locate "level-3".
+Use a general method to decompress it.
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2$ find -name "level-3"
+./gBT5u0vLT5/level-3
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2$ unzip ./gBT5u0vLT5/level-3
+Archive:  ./gBT5u0vLT5/level-3
+  End-of-central-directory signature not found.  Either this file is not
+  a zipfile, or it constitutes one disk of a multi-part archive.  In the
+  latter case the central directory and zipfile comment will be found on
+  the last disk(s) of this archive.
+unzip:  cannot find zipfile directory in one of ./gBT5u0vLT5/level-3 or
+        ./gBT5u0vLT5/level-3.zip, and cannot find ./gBT5u0vLT5/level-3.ZIP, period.
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2$ tar -xf ./gBT5u0vLT5/level-3
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2$ gunzip ./gBT5u0vLT5/level-3
+gzip: ./gBT5u0vLT5/level-3: unknown suffix -- ignored
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2$ gunzip ./gBT5u0vLT5/level-3.gz
+gzip: ./gBT5u0vLT5/level-3.gz: No such file or directory
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2$ cd .
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2$ cd ./gBT5u0vLT5
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2/gBT5u0vLT5$ ls
+level-3
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2/gBT5u0vLT5$ tar -xf level-3
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2/gBT5u0vLT5$ gunzip level-3.gz
+gzip: level-3.gz: No such file or directory
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2/gBT5u0vLT5$ cd level-3
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2/gBT5u0vLT5/level-3$ ls
+00aBxtql7r  6C8RwQ9kGP  9QBLcfEf91  ctnOoPIga1  FeBBLsJEYS  IKeqpTmvmW  K56S3V4AQ6  mwILTjPhCP  Ou1q6zOh5n  rgNTkxVkxN  ufdeX2Dk7C  X62Vq1yIyL
+0aba2tPi4R  6hnWZbro0I  a6HPyy5Mz5  cWRi45wacA  FJsgrBEwbJ  ioOe8b7TsJ  K9kyHBbw7y  mxG418at98  oV3aef60WL  RnL5L0QLbY  v2ME2J4GuF  X6lkChFKsj
+0QYBUNJixX  6JPHCI1K8M  A8SqBitLRB  cWZv9iI87X  flbjrqIXMS  iOplykVsBo  Kfce3CFjhh  mydABLXwyL  OXZ3OOGJ7O  RPZAvV75tm  V64A9vKnYq  XapfbudtZp
+17pfO4tY4m  6lie6mPCRe  aFjSvqXqWE  cX6YaqFDFY  fn95Z2sG3o  ip23ESdwGT  KJBdbwTmzD  n4d9SlSzcV  oZ5HOQe6X0  RU4rJzjPfg  vkaOISlk2I  xBsGYZHomA
+1NBA3mJTQC  6mnK6keHIi  AI8sfDgnhT  D5JYr3I592  FYrh0rmC4q  IygdcTaoYP  kkIu8kVXLo  n4MCXv5XM2  p194n4sSpi  RWWLnFwGtv  vLWtq7N2aR  xigSiLU79u
+1pnvifRmA6  6mpTfHgnlX  AJtW9NcRLy  dBJSXzmpb1  G9UhKYNLgv  iymCtoFUVf  kOIOppD8hx  N5lXyVotHN  p3ARvi0q4F  rwZwqdxHhJ  VneCQhwmfv  XkrAGaosYZ
+22ix6enm8X  6vigp6VM7d  ANRcGwDkvK  Dd9KxIjxSB  GaMed1WIDN  j3JsNAEsm1  kp1ujuDGKO  nBoQgGxoGX  p6PVEBfSyK  rzSTDqa7oV  vUbRKbYlKR  xRxKkdCTU8
+2GsF4Kn1PG  6ZJgIXN3P0  ayHSb1kjNd  dK320XCmR0  gcb0bfLbVM  J3K5BY52dp  krWRFtvYDP  NdkrRTZmr9  PaOzJn0sJV  SaaZymLdoG  Vw5Jm3saUP  xYCpOSRLsl
+2IFaRh0Jxc  71qxiSKgAY  b4BF572o41  DKiaUm3WBb  gfLQDXjJAW  J5feTUwPso  kT3eEAfVcY  NHag0dTW3U  PDJdFxfgvh  SaQtx8SNld  vz1uLzTKjO  xYlmccmE5f
+30msooUqJf  74gKRNrKVf  b957oPA24t  Doi1I9Z8TE  Gksn5ca8Jn  jahdjqT54b  kwmQK5z76U  nlgqxKuRC3  penDnjNMQc  sf7ajd5INC  VZw2jtUdZD  Y0nB0Ep1my
+3Ig28f7Xa8  77RwxhcZTx  Bb0kZiNxDz  dqbKkDKbZl  gOWuBZZgn2  JArjmQWPVq  L5DOn3iY18  NLM96g2hH3  pH9s3o8foP  skVRxkHK04  W6AdwbmalK  y1IAp2YdZc
+3SSDrwrwmt  7C4OyiuQc4  BbreWoCXSv  dtLZdglPV3  GPaN65ikSl  JBDnoFKLcx  L8ZzpZTLz5  Nmuh6DvLkc  pI49N7Zoxn  sNrtW0eiZF  WfUKyzFeEv  Ye8R8ZOvJ9
+3TpnDd6PaY  7nMGZvigiL  bduLsR7v4K  Dux6sHDdCW  gu78Zpnknw  JbMcWq9tku  LeUtklcfmE  nR711EHtmU  Pmf5TqkkYg  SqAZPx7CbA  WFyKhZdOcx  ygasPrK3kG
+3wTdqmDig6  7PFGHcmfa2  bOKXTvk63r  EHm7bcCxj1  gu92R3c92I  Jc0EEC4sua  LKfMizQQjE  nSC9OkT1E3  pO4Lt5DPrX  SRgPbWeEG6  wgibrPHhJq  YgeyHmPrtP
+3XXNloi4gV  7sxFwD2jGw  BrJvEu79eg  epBL6naqQR  gupiPOsJzC  JgVwSWAUsr  lowIuX2RQI  nwt49CVPtC  psmL4dk69Y  sRhTcN4PIw  WhTtCYas3M  ysdoXYcYQq
+3YhvETOVcv  82aRYKaCZB  BTf86zJsB3  ePj0HMi3nh  hb4zKjD5G4  JlhNaDm4f7  LtH4X99Uw3  O009zeKkif  pXXxEWcKkz  sVyNLUXzut  wJC19bchr2  YVAPjrh8Up
+4jFmUBgygR  88exEg2MMo  byVoAmiOqs  Eqk382soFH  hBv1LejGKu  JnOT2WHKbE  LZ5jebusoa  O0V7mQCicJ  q4gh4nODZa  T0gYx5T5ks  WLuasYnMvP  zEmK04yIqc
+4vG2fYLy6B  8IOqsSAWIo  bze36b6xjZ  eT21MMr22o  Hf8ovJhWKI  jpO4wGMT57  M1vV6QxnH1  o6Q2i1NUXc  qFO0JDSF0N  Tbi1MdwiMX  Wm14GdEGcm  ZenzUsQydR
+53IaK7n1np  8OLXyd5ai0  C5KrlOGYlu  eT909HWyck  hGCeu2NgZ5  JqAekDHYif  m59pSiQG2p  OAbH1oFg57  Qh9GBAd3mF  tEgA7tGwxB  wpJyCPLODS  zet1AFeHNl
+5H5OLdA8qE  8u4f62oAYb  cDfzzIGULi  ETRyNzIpYk  HuSBc8QKYi  jrMKucOmtp  m7lRDpRTUJ  OaRp7TV8pe  QM053Y9Vw1  TezFlyJz9o  wpoGQ7WmSg  zghxQE4JGJ
+5ME7YKcHsa  8X1ovlX6ex  cF1AG2dtLr  ev8BCScTMa  HXq7gqQZ5Z  jVBkVAbTHj  MaqkHpS39h  ObIefWWqqM  R0LpA1qK4F  TFkiwAHDrG  WSxUR7IJd8  ZNq1fiVP6F
+5tAchjHlmE  9CA6eRBprt  cjcKUQDGLl  F5Db7l8s9j  i4CkeVfT7S  jVGv0HeZvG  MKQErXMkPE  OFx3U24MoP  R6okint5JZ  Tt0xmDrg4Y  wZ4LJKpHW6  zTfi6AwgZQ
+5tJnO1Mwzf  9GqYmpQsAS  cKiyNtE0yD  F9OYJjkGiB  iCR4qC97HM  jvyPQ8Z8ht  moQuVgMB1f  OHWTswrtBk  R82WkcyQAx  tZCE2HQg8s  x2CDPgz6Jk  zxmnKldpmY
+5VoPA03kvi  9my7brVWmo  ClbTpohwVU  fCLOGDR05y  IE4xWwbydi  JYdPDFpOIe  mRET49bBGR  ojc7SuLzMV  rcEkx0b0WC  uAw4PKT7E0  x3Nvoy3Ucl  zzgiKI2xSS
+6AJpxbHYkm  9NNnGuH7A1  cStCLsSELl  Fdvgo1aqTT  IiLRIuK1Fi  k2yYJNQcLu  mu6c42Y1qo  orzpz7CBBQ  README.txt  udqz57oeuX  x3SkxfEItU  zZU6ymQky6
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2/gBT5u0vLT5/level-3$ find -type f -name "*.txt"
+./README.txt
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2/gBT5u0vLT5/level-3$ cat ./README.txt
+You're seeking a file with a certain size.
+Find the link to get the size.
+
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2/gBT5u0vLT5/level-3$ ls -li
+total 804
+1092295 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 00aBxtql7r
+1092468 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 0aba2tPi4R
+1092482 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 0QYBUNJixX
+1092547 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 17pfO4tY4m
+1092259 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 1NBA3mJTQC
+1092302 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 1pnvifRmA6
+1092442 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 22ix6enm8X
+1092242 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 2GsF4Kn1PG
+1092526 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 2IFaRh0Jxc
+1092537 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 30msooUqJf
+1092169 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 3Ig28f7Xa8
+1092471 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 3SSDrwrwmt
+1092436 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 3TpnDd6PaY
+1092536 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 3wTdqmDig6
+1092256 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 3XXNloi4gV
+1092550 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 3YhvETOVcv
+1092496 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 4jFmUBgygR
+1092223 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 4vG2fYLy6B
+1092254 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 53IaK7n1np
+1092544 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 5H5OLdA8qE
+1092234 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 5ME7YKcHsa
+1092462 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 5tAchjHlmE
+1092246 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 5tJnO1Mwzf
+1092540 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 5VoPA03kvi
+1092243 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 6AJpxbHYkm
+1092460 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 6C8RwQ9kGP
+1092519 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 6hnWZbro0I
+1092446 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 6JPHCI1K8M
+1092439 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 6lie6mPCRe
+1092228 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 6mnK6keHIi
+1092282 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 6mpTfHgnlX
+1092491 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 6vigp6VM7d
+1092202 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 6ZJgIXN3P0
+1092484 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 71qxiSKgAY
+1092472 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 74gKRNrKVf
+1092233 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 77RwxhcZTx
+1092284 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 7C4OyiuQc4
+1092525 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 7nMGZvigiL
+1092150 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 7PFGHcmfa2
+1092220 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 7sxFwD2jGw
+1092167 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 82aRYKaCZB
+1092490 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 88exEg2MMo
+1092176 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 8IOqsSAWIo
+1092483 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 8OLXyd5ai0
+1092457 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 8u4f62oAYb
+1092238 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 8X1ovlX6ex
+1092161 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 9CA6eRBprt
+1092275 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 9GqYmpQsAS
+1092548 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 9my7brVWmo
+1092245 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 9NNnGuH7A1
+1092244 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 9QBLcfEf91
+1092258 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 a6HPyy5Mz5
+1092546 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 A8SqBitLRB
+1092274 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 aFjSvqXqWE
+1092552 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 AI8sfDgnhT
+1092477 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 AJtW9NcRLy
+1092437 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 ANRcGwDkvK
+1092555 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 ayHSb1kjNd
+1092527 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 b4BF572o41
+1092509 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 b957oPA24t
+1092281 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 Bb0kZiNxDz
+1092222 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 BbreWoCXSv
+1092265 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 bduLsR7v4K
+1092309 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 bOKXTvk63r
+1092475 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 BrJvEu79eg
+1092296 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 BTf86zJsB3
+1092507 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 byVoAmiOqs
+1092444 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 bze36b6xjZ
+1092217 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 C5KrlOGYlu
+1092438 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 cDfzzIGULi
+1092215 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 cF1AG2dtLr
+1092554 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 cjcKUQDGLl
+1092164 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 cKiyNtE0yD
+1092155 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 ClbTpohwVU
+1092232 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 cStCLsSELl
+1092229 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 ctnOoPIga1
+1092157 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 cWRi45wacA
+1092465 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 cWZv9iI87X
+1092299 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 cX6YaqFDFY
+1092453 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 D5JYr3I592
+1092501 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 dBJSXzmpb1
+1092276 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 Dd9KxIjxSB
+1092313 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 dK320XCmR0
+1092271 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 DKiaUm3WBb
+1092174 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 Doi1I9Z8TE
+1092463 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 dqbKkDKbZl
+1092199 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 dtLZdglPV3
+1092452 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 Dux6sHDdCW
+1092270 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 EHm7bcCxj1
+1092506 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 epBL6naqQR
+1092481 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 ePj0HMi3nh
+1092172 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 Eqk382soFH
+1092290 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 eT21MMr22o
+1092449 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 eT909HWyck
+1092187 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 ETRyNzIpYk
+1092168 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 ev8BCScTMa
+1092434 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 F5Db7l8s9j
+1092231 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 F9OYJjkGiB
+1092311 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 fCLOGDR05y
+1092262 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 Fdvgo1aqTT
+1092201 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 FeBBLsJEYS
+1092216 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 FJsgrBEwbJ
+1092181 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 flbjrqIXMS
+1092532 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 fn95Z2sG3o
+1092261 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 FYrh0rmC4q
+1092192 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 G9UhKYNLgv
+1092315 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 GaMed1WIDN
+1092473 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 gcb0bfLbVM
+1092158 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 gfLQDXjJAW
+1092551 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 Gksn5ca8Jn
+1092557 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 gOWuBZZgn2
+1092480 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 GPaN65ikSl
+1092209 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 gu78Zpnknw
+1092542 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 gu92R3c92I
+1092431 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 gupiPOsJzC
+1092432 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 hb4zKjD5G4
+1092190 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 hBv1LejGKu
+1092235 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 Hf8ovJhWKI
+1092207 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 hGCeu2NgZ5
+1092303 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 HuSBc8QKYi
+1092497 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 HXq7gqQZ5Z
+1092154 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 i4CkeVfT7S
+1092458 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 iCR4qC97HM
+1092291 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 IE4xWwbydi
+1092492 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 IiLRIuK1Fi
+1092260 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 IKeqpTmvmW
+1092503 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 ioOe8b7TsJ
+1092479 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 iOplykVsBo
+1092314 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 ip23ESdwGT
+1092236 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 IygdcTaoYP
+1092213 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 iymCtoFUVf
+1092184 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 j3JsNAEsm1
+1092543 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 J3K5BY52dp
+1092533 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 J5feTUwPso
+1092464 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 jahdjqT54b
+1092312 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 JArjmQWPVq
+1092280 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 JBDnoFKLcx
+1092264 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 JbMcWq9tku
+1092206 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 Jc0EEC4sua
+1092179 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 JgVwSWAUsr
+1092430 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 JlhNaDm4f7
+1092440 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 JnOT2WHKbE
+1092240 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 jpO4wGMT57
+1092513 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 JqAekDHYif
+1092218 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 jrMKucOmtp
+1092469 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 jVBkVAbTHj
+1092162 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 jVGv0HeZvG
+1092185 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 jvyPQ8Z8ht
+1092441 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 JYdPDFpOIe
+1092205 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 k2yYJNQcLu
+1092219 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 K56S3V4AQ6
+1092447 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 K9kyHBbw7y
+1092249 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 Kfce3CFjhh
+1092516 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 KJBdbwTmzD
+1092198 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 kkIu8kVXLo
+1092448 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 kOIOppD8hx
+1092297 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 kp1ujuDGKO
+1092488 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 krWRFtvYDP
+1092433 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 kT3eEAfVcY
+1092186 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 kwmQK5z76U
+1092189 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 L5DOn3iY18
+1092445 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 L8ZzpZTLz5
+1092521 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 LeUtklcfmE
+1092493 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 LKfMizQQjE
+1092456 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 lowIuX2RQI
+1092539 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 LtH4X99Uw3
+1092163 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 LZ5jebusoa
+1092498 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 M1vV6QxnH1
+1092211 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 m59pSiQG2p
+1092317 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 m7lRDpRTUJ
+1092474 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 MaqkHpS39h
+1092524 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 MKQErXMkPE
+1092177 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 moQuVgMB1f
+1092160 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 mRET49bBGR
+1092454 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 mu6c42Y1qo
+1092512 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 mwILTjPhCP
+1092489 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 mxG418at98
+1092530 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 mydABLXwyL
+1092300 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 n4d9SlSzcV
+1092288 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 n4MCXv5XM2
+1092151 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 N5lXyVotHN
+1092514 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 nBoQgGxoGX
+1092171 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 NdkrRTZmr9
+1092263 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 NHag0dTW3U
+1092182 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 nlgqxKuRC3
+1092230 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 NLM96g2hH3
+1092508 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 Nmuh6DvLkc
+1092251 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 nR711EHtmU
+1092248 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 nSC9OkT1E3
+1092528 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 nwt49CVPtC
+1092310 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 O009zeKkif
+1092279 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 O0V7mQCicJ
+1092166 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 o6Q2i1NUXc
+1092272 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 OAbH1oFg57
+1092435 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 OaRp7TV8pe
+1092180 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 ObIefWWqqM
+1092156 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 OFx3U24MoP
+1092152 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 OHWTswrtBk
+1092170 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 ojc7SuLzMV
+1092306 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 orzpz7CBBQ
+1092204 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 Ou1q6zOh5n
+1092268 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 oV3aef60WL
+1092459 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 OXZ3OOGJ7O
+1092500 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 oZ5HOQe6X0
+1092292 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 p194n4sSpi
+1092273 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 p3ARvi0q4F
+1092173 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 p6PVEBfSyK
+1092294 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 PaOzJn0sJV
+1092255 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 PDJdFxfgvh
+1092250 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 penDnjNMQc
+1092305 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 pH9s3o8foP
+1091614 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 pI49N7Zoxn
+1092298 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 Pmf5TqkkYg
+1092257 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 pO4Lt5DPrX
+1092195 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 psmL4dk69Y
+1092529 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 pXXxEWcKkz
+1092178 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 q4gh4nODZa
+1092226 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 qFO0JDSF0N
+1092193 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 Qh9GBAd3mF
+1092523 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 QM053Y9Vw1
+1092266 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 R0LpA1qK4F
+1092486 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 R6okint5JZ
+1092285 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 R82WkcyQAx
+1092283 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 rcEkx0b0WC
+1092196 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar   75 Aug  9 20:35 README.txt
+1092212 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 rgNTkxVkxN
+1092455 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 RnL5L0QLbY
+1092461 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 RPZAvV75tm
+1092450 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 RU4rJzjPfg
+1092470 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 RWWLnFwGtv
+1092504 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 rwZwqdxHhJ
+1092522 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 rzSTDqa7oV
+1092466 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 SaaZymLdoG
+1092200 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 SaQtx8SNld
+1092224 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 sf7ajd5INC
+1092429 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 skVRxkHK04
+1092428 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 sNrtW0eiZF
+1092188 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 SqAZPx7CbA
+1092269 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 SRgPbWeEG6
+1092308 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 sRhTcN4PIw
+1092225 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 sVyNLUXzut
+1092443 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 T0gYx5T5ks
+1092535 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 Tbi1MdwiMX
+1092286 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 tEgA7tGwxB
+1092214 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 TezFlyJz9o
+1092520 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 TFkiwAHDrG
+1092252 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 Tt0xmDrg4Y
+1092267 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 tZCE2HQg8s
+1092301 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 uAw4PKT7E0
+1092467 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 udqz57oeuX
+1092210 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 ufdeX2Dk7C
+1092247 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 v2ME2J4GuF
+1092278 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 V64A9vKnYq
+1092558 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 vkaOISlk2I
+1092197 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 vLWtq7N2aR
+1092451 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 VneCQhwmfv
+1092515 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 vUbRKbYlKR
+1092227 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 Vw5Jm3saUP
+1092165 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 vz1uLzTKjO
+1092502 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 VZw2jtUdZD
+1092183 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 W6AdwbmalK
+1092191 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar   34 Aug  9 20:35 WfUKyzFeEv
+1092221 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 WFyKhZdOcx
+1092287 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 wgibrPHhJq
+1092485 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 WhTtCYas3M
+1092505 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 wJC19bchr2
+1092553 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 WLuasYnMvP
+1092499 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 Wm14GdEGcm
+1092478 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 wpJyCPLODS
+1092203 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 wpoGQ7WmSg
+1092277 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 WSxUR7IJd8
+1092316 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 wZ4LJKpHW6
+1092487 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 x2CDPgz6Jk
+1092208 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 x3Nvoy3Ucl
+1092494 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 x3SkxfEItU
+1092534 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 X62Vq1yIyL
+1092175 lrwxrwxrwx 1 raghadsamyaskar raghadsamyaskar   10 Aug  9 20:35 X6lkChFKsj -> WfUKyzFeEv
+1092239 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 XapfbudtZp
+1092241 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 xBsGYZHomA
+1092518 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 xigSiLU79u
+1092153 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 XkrAGaosYZ
+1092531 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 xRxKkdCTU8
+1092511 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 xYCpOSRLsl
+1092159 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 xYlmccmE5f
+1092194 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 Y0nB0Ep1my
+1092549 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 y1IAp2YdZc
+1092510 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 Ye8R8ZOvJ9
+1092545 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 ygasPrK3kG
+1092495 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 YgeyHmPrtP
+1092304 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 ysdoXYcYQq
+1092538 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 YVAPjrh8Up
+1092307 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 zEmK04yIqc
+1092476 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 ZenzUsQydR
+1092237 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 zet1AFeHNl
+1092253 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 zghxQE4JGJ
+1092556 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 ZNq1fiVP6F
+1092541 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 zTfi6AwgZQ
+1092517 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 zxmnKldpmY
+1092293 drwxr-xr-x 2 raghadsamyaskar raghadsamyaskar 4096 Aug  9 20:35 zzgiKI2xSS
+1092289 -rw-r--r-- 1 raghadsamyaskar raghadsamyaskar    0 Aug  9 20:35 zZU6ymQky6
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2/gBT5u0vLT5/level-3$ cd X61kChFKsj
+bash: cd: X61kChFKsj: No such file or directory
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2/gBT5u0vLT5/level-3$ find -size 10
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2/gBT5u0vLT5/level-3$ cat WfUKyzFeEv
+73 bytes is your target file size
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2/gBT5u0vLT5/level-3$ fine -size 73c
+Command 'fine' not found, did you mean:
+  command 'find' from deb findutils (4.8.0-1ubuntu3)
+  command 'ifne' from deb moreutils (0.66-1)
+  command 'file' from deb file (1:5.41-3)
+  command 'wine' from deb wine (6.0.3~repack-1)
+  command 'wine' from deb wine-development (6.0+repack-1ubuntu1)
+  command 'xine' from deb xine-ui (0.99.13-1)
+Try: sudo apt install <deb name>
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2/gBT5u0vLT5/level-3$ find -size 73c
+./m7lRDpRTUJ/xVMvVOKNW5
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2/gBT5u0vLT5/level-3$ cat ./m71RDpRTUJ/xVMvVOKNW5
+cat: ./m71RDpRTUJ/xVMvVOKNW5: No such file or directory
+raghadsamyaskar@pop-os:~/Downloads/.level-1/level-2/gBT5u0vLT5/level-3$ cat ./m7lRDpRTUJ/xVMvVOKNW5
+Congrats!! You have finished the Task Successfully, you can rest now :D.
