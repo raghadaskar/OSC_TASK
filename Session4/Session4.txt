@@ -1,1 +1,143 @@
+raghadsamyaskar@pop-os:~$ pwd
+/home/raghadsamyaskar
+raghadsamyaskar@pop-os:~$ ls
+ askar           Downloads       Public          'Raghad Samy'         test
+ askr            file_check.sh   ragad           'raghad samy askar'   training
+ calculator.sh   linux          'raghaad samy '   rename_files.sh      Videos
+ desktop         Music           raghad           summer
+ Desktop         My_Documents   'raghad Askar'    system_info.sh
+ Documents       Pictures       'Raghad Askar'    Templates
+raghadsamyaskar@pop-os:~$ ./system_info.sh
+bash: ./system_info.sh: Permission denied
+raghadsamyaskar@pop-os:~$ chmod +x system_info.sh
+raghadsamyaskar@pop-os:~$ chmod +x file_check.sh
+raghadsamyaskar@pop-os:~$ chmod +x rename_files.sh
+raghadsamyaskar@pop-os:~$ chmod +x calculator.sh
+raghadsamyaskar@pop-os:~$ ls -1
+askar
+askr
+calculator.sh
+desktop
+Desktop
+Documents
+Downloads
+file_check.sh
+linux
+Music
+My_Documents
+Pictures
+Public
+ragad
+'raghaad samy '
+raghad
+'raghad Askar'
+'Raghad Askar'
+'Raghad Samy'
+'raghad samy askar'
+rename_files.sh
+summer
+system_info.sh
+Templates
+test
+training
+Videos
+raghadsamyaskar@pop-os:~$ ./system_info.sh
+Username: raghadsamyaskar
+Kernel Version: 6.2.6-76060206-generic
+raghadsamyaskar@pop-os:~$ ./file_check.sh file1.txt /home/raghadsamyaskar
+File does nor exist
+raghadsamyaskar@pop-os:~$ ./file_check.sh 1  /home/raghadsamyaskar
+File does nor exist
+raghadsamyaskar@pop-os:~$ ./file_check.sh $1  /home/raghadsamyaskar
+File exists
+Contents of /home/raghadsamyaskar:
+cat: //home/raghadsamyaskar: Is a directory
+raghadsamyaskar@pop-os:~$ ./rename_files.sh extension new_name
+mv: cannot stat '*.extension': No such file or directory
+raghadsamyaskar@pop-os:~$ ./rename_files.sh png photo
+mv: cannot stat '*.png': No such file or directory
+raghadsamyaskar@pop-os:~$ ls
+ askar           Downloads       Public          'Raghad Samy'         test
+ askr            file_check.sh   ragad           'raghad samy askar'   training
+ calculator.sh   linux          'raghaad samy '   rename_files.sh      Videos
+ desktop         Music           raghad           summer
+ Desktop         My_Documents   'raghad Askar'    system_info.sh
+ Documents       Pictures       'Raghad Askar'    Templates
+raghadsamyaskar@pop-os:~$ ./rename_files.sh test photo
+mv: cannot stat '*.test': No such file or directory
+raghadsamyaskar@pop-os:~$ ./rename_files.sh test.txt  photo
+mv: cannot stat '*.test.txt': No such file or directory
+raghadsamyaskar@pop-os:~$ cd Pictures
+raghadsamyaskar@pop-os:~/Pictures$ ls
+Screenshots
+raghadsamyaskar@pop-os:~/Pictures$ ls screenshots
+ls: cannot access 'screenshots': No such file or directory
+raghadsamyaskar@pop-os:~/Pictures$ ls Screenshots
+'Screenshot from 2023-08-07 18-24-08.png'  'Screenshot from 2023-08-07 18-35-30.png'
+'Screenshot from 2023-08-07 18-24-21.png'  'Screenshot from 2023-08-07 19-08-42.png'
+'Screenshot from 2023-08-07 18-24-54.png'  'Screenshot from 2023-08-08 01-46-29.png'
+'Screenshot from 2023-08-07 18-29-32.png'  'session 1'
+raghadsamyaskar@pop-os:~/Pictures$ ./rename_files.sh 'session 1'.png  photo
+bash: ./rename_files.sh: No such file or directory
+raghadsamyaskar@pop-os:~/Pictures$ ./rename_files.sh 'session 1'  photo
+bash: ./rename_files.sh: No such file or directory
+raghadsamyaskar@pop-os:~/Pictures$ ./rename_files.sh .png photo
+bash: ./rename_files.sh: No such file or directory
+raghadsamyaskar@pop-os:~/Pictures$ touch image.png
+raghadsamyaskar@pop-os:~/Pictures$ ./rename_files.sh image.png photo
+bash: ./rename_files.sh: No such file or directory
+raghadsamyaskar@pop-os:~/Pictures$ cd home
+bash: cd: home: No such file or directory
+raghadsamyaskar@pop-os:~/Pictures$ cd
+raghadsamyaskar@pop-os:~$ ./rename_files.sh image.png photo
+mv: cannot stat '*.image.png': No such file or directory
+raghadsamyaskar@pop-os:~$ ls
+ askar           Documents       My_Documents     raghad               rename_files.sh   training
+ askr            Downloads       Pictures        'raghad Askar'        summer            Videos
+ calculator.sh   file_check.sh   Public          'Raghad Askar'        system_info.sh
+ desktop         linux           ragad           'Raghad Samy'         Templates
+ Desktop         Music          'raghaad samy '  'raghad samy askar'   test
+raghadsamyaskar@pop-os:~$ touch lion.png tiger.png flamingo.png
+raghadsamyaskar@pop-os:~$ ls
+ askar           Documents       lion.png       ragad           'Raghad Samy'         Templates
+ askr            Downloads       Music         'raghaad samy '  'raghad samy askar'   test
+ calculator.sh   file_check.sh   My_Documents   raghad           rename_files.sh      tiger.png
+ desktop         flamingo.png    Pictures      'raghad Askar'    summer               training
+ Desktop         linux           Public        'Raghad Askar'    system_info.sh       Videos
+raghadsamyaskar@pop-os:~$ ./rename_files.sh png image
+raghadsamyaskar@pop-os:~$ ls
+ askar           Documents       My_Documents  'raghaad samy '  'raghad samy askar'   test
+ askr            Downloads       new_filename   raghad           rename_files.sh      training
+ calculator.sh   file_check.sh   Pictures      'raghad Askar'    summer               Videos
+ desktop         linux           Public        'Raghad Askar'    system_info.sh
+ Desktop         Music           ragad         'Raghad Samy'     Templates
+raghadsamyaskar@pop-os:~$ ./calculator.sh
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Exit
+Enter your choice:  1
+Enter the first number:  10
+Enter the second number: 20
+10 + 20 = 30
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Exit
+Enter your choice:  2
+Enter the first number:  10
+Enter the second number: 20
+10 - 20 = -10
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Exit
+Enter your choice:  5 
+Exiting...
+raghadsamyaskar@pop-os:~$ 
+raghadsamyaskar@pop-os:~$ 
+
 
